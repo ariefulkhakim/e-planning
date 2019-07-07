@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+body {
+    background-image: url('../image/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background-color: #000000;
+    opacity: .5;
+    left: 0;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#header {
+    margin: 0px 0 20px 0;
+}
+
+.logo-left .img-logo {
+    width: 70%;
+    float: right
+}
+
+.header-title h1 {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 52px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.logo-right .img-logo {
+    width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-position: center;
+        padding-bottom: 80px;
+    }
+    .logo-left .img-logo {
+        width: 70%;
+        float: right;
+        text-align: center
+    }
+    .logo-right .img-logo {
+        width: 80%;
+    }
+    .header-title h1 {
+        color: #ffffff;
+        font-weight: 800;
+        font-size: 32px;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .mobile-content {
+        margin-top: 40px;
+    }
+}
+
+#content {
+    margin: 50px 0 0 0;
+}
+
+.content {
+    position: relative;
+    background-color: #F3E8EE;
+    padding: 20px 20px;
+    border-radius: 10px;
+    color: #114B5F;
+    margin-bottom: 20px;
+    height: 50%;
+    transition: all 0.5s;
+}
+
+.content:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.icon-content {
+    float: right;
+    font-size: 50px;
+}
+
+.content .title h3 {
+    font-weight: 800;
+}
+
+.content .sub-title {
+    font-weight: 600
+}
+
+.content .description p {
+    margin-bottom: 0;
+    font-size: 14px;
+    margin-top: 12px;
+    letter-spacing: 0.5px;
+}
