@@ -6,10 +6,9 @@ body {
     background-size: cover;
     min-height: 100vh;
     position: relative;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 50px;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 body::after {
@@ -66,23 +65,24 @@ body::after {
         text-align: center;
         padding-top: 50px;
     }
-    .mobile-content {
-        margin-top: 40px;
+    .content {
+        margin-bottom: 40px;
+        height: auto !important;
     }
 }
 
 #content {
-    margin: 50px 0 0 0;
+    margin: 35px 0 0 0;
 }
 
 .content {
     position: relative;
-    background-color: #F3E8EE;
-    padding: 20px 20px;
+    background-color: #f8fbfe;
+    padding: 20px 15px;
     border-radius: 10px;
     color: #114B5F;
     margin-bottom: 20px;
-    height: 50%;
+    height: 100%;
     transition: all 0.5s;
 }
 
@@ -92,8 +92,10 @@ body::after {
 }
 
 .icon-content {
-    float: right;
+    float: left;
     font-size: 50px;
+    padding-right: 20px;
+    display: block
 }
 
 .content .title h3 {
@@ -101,12 +103,43 @@ body::after {
 }
 
 .content .sub-title {
-    font-weight: 600
+    font-weight: 700;
+    font-size: 16px;
 }
 
 .content .description p {
     margin-bottom: 0;
     font-size: 14px;
-    margin-top: 12px;
-    letter-spacing: 0.5px;
+    margin-top: 18px;
+    letter-spacing: 1.5px;
+}
+
+.footer h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 80px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+hr.line-top, 
+hr.line-mid,
+hr.line-bot {
+    border-width: 5px;
+    border-top-color: #fff;
+    margin-bottom: 0;
+    margin-top: 8px;
+}
+
+hr.line-top {
+    width: 25%
+}
+
+hr.line-mid {
+    width: 18%
+}
+
+hr.line-bot {
+    width: 10%
 }
